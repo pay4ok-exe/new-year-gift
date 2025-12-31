@@ -4,17 +4,7 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Card } from '@/components/ui/card'
 
-const reasons = [
-    "Your smile lights up my darkest days.",
-    "You always know how to make me laugh.",
-    "You support my dreams no matter what.",
-    "The way you look at me makes me feel invincible.",
-    "You make the best coffee in the world.",
-    "You are my best friend and my soulmate.",
-    "I love how we can talk about anything.",
-    "You inspire me to be a better person.",
-    "Every moment with you is an adventure."
-]
+import { reasons } from '@/lib/data'
 
 export function ReasonsDeck() {
     const [index, setIndex] = useState(0)

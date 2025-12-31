@@ -4,25 +4,10 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import { quizQuestions } from '@/lib/data'
 import confetti from 'canvas-confetti'
 
-const questions = [
-    {
-        question: "Where was our first date?",
-        options: ["The Coffee Shop", "The Movies", "The Park", "Restaurant"],
-        correct: 0
-    },
-    {
-        question: "What is my favorite food?",
-        options: ["Pizza", "Sushi", "Burgers", "Tacos"],
-        correct: 1
-    },
-    {
-        question: "When did we first say 'I love you'?",
-        options: ["On the beach", "In the car", "New Year's Eve", "My Birthday"],
-        correct: 2
-    }
-]
+const questions = quizQuestions
 
 export function Quiz() {
     const [currentQuestion, setCurrentQuestion] = useState(0)

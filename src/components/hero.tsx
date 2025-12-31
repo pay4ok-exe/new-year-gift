@@ -1,60 +1,31 @@
-'use client'
+"use client";
 
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { useRef } from 'react'
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export function Hero() {
-  const ref = useRef(null)
+  const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"]
-  })
+    offset: ["start start", "end start"],
+  });
 
   // Smooth parallax effects
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   const scrollToTimeline = () => {
-    const timeline = document.getElementById('timeline')
+    const timeline = document.getElementById("timeline");
     if (timeline) {
-      timeline.scrollIntoView({ behavior: 'smooth' })
+      timeline.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <section
       ref={ref}
       className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-background"
     >
-      {/* Dynamic Background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-950 via-background to-background z-0" />
-
-      {/* Starlight Particles */}
-      {[...Array(30)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute bg-white rounded-full mix-blend-screen"
-          style={{
-            width: Math.random() * 3 + 1 + 'px',
-            height: Math.random() * 3 + 1 + 'px',
-            top: Math.random() * 100 + '%',
-            left: Math.random() * 100 + '%',
-            opacity: Math.random() * 0.7 + 0.3,
-          }}
-          animate={{
-            y: [0, -30, 0],
-            opacity: [0.2, 1, 0.2],
-            scale: [0, 1.5, 0],
-          }}
-          transition={{
-            duration: Math.random() * 3 + 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: Math.random() * 2
-          }}
-        />
-      ))}
-
       {/* Main Content */}
       <motion.div
         style={{ y, opacity }}
@@ -86,5 +57,5 @@ export function Hero() {
         </motion.button>
       </motion.div>
     </section>
-  )
+  );
 }
