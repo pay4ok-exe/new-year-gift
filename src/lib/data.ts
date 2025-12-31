@@ -60,9 +60,9 @@ export const timelineEvents: TimelineEvent[] = [
     description: "I am so happy to your coming",
     emoji: "🎂",
     images: [
-      "/timeline/2025-08-28-almaty-birthday-1.jpg",
-      "/timeline/2025-08-28-almaty-birthday-2.jpg",
-      "/timeline/2025-08-28-almaty-birthday-3.jpg",
+      "/timeline/2025-08-28-almaty-birthday-1.png",
+      "/timeline/2025-08-28-almaty-birthday-2.png",
+      "/timeline/2025-08-28-almaty-birthday-3.png",
     ],
   },
   {
@@ -71,9 +71,9 @@ export const timelineEvents: TimelineEvent[] = [
     description: "Kolsay and so on",
     emoji: "🏔️",
     images: [
-      "/timeline/2025-08-29-kolsay-tour-1.jpg",
-      "/timeline/2025-08-29-kolsay-tour-2.jpg",
-      "/timeline/2025-08-29-kolsay-tour-3.jpg",
+      "/timeline/2025-08-29-kolsay-tour-1.png",
+      "/timeline/2025-08-29-kolsay-tour-2.png",
+      "/timeline/2025-08-29-kolsay-tour-3.png",
     ],
   },
   {
@@ -82,9 +82,9 @@ export const timelineEvents: TimelineEvent[] = [
     description: "To be near with you, still together. I love you so much",
     emoji: "❤️",
     images: [
-      "/timeline/2025-09-01-astana-1.HEIC",
-      "/timeline/2025-09-01-astana-2.jpg",
-      "/timeline/2025-09-01-astana-3.jpg",
+      "/timeline/2025-09-01-astana-1.png",
+      "/timeline/2025-09-01-astana-2.png",
+      "/timeline/2025-09-01-astana-3.png",
     ],
   },
   {
@@ -93,9 +93,9 @@ export const timelineEvents: TimelineEvent[] = [
     description: "Half a year of happiness together",
     emoji: "📅",
     images: [
-      "/timeline/2025-11-25-6-months-1.jpg",
-      "/timeline/2025-11-25-6-months-2.jpg",
-      "/timeline/2025-11-25-6-months-3.jpg",
+      "/timeline/2025-11-25-6-months-1.png",
+      "/timeline/2025-11-25-6-months-2.png",
+      "/timeline/2025-11-25-6-months-3.png",
     ],
   },
   {
@@ -104,9 +104,9 @@ export const timelineEvents: TimelineEvent[] = [
     description: "I Love you",
     emoji: "🎆",
     images: [
-      "/timeline/2026-01-01-new-year-1.jpg",
-      "/timeline/2026-01-01-new-year-2.jpg",
-      "/timeline/2026-01-01-new-year-3.jpg",
+      // "/timeline/2026-01-01-new-year-1.jpg",
+      // "/timeline/2026-01-01-new-year-2.jpg",
+      // "/timeline/2026-01-01-new-year-3.jpg",
     ],
   },
   {
