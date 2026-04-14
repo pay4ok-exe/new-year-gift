@@ -10,7 +10,6 @@ export function Hero() {
     offset: ["start start", "end start"],
   });
 
-  // Smooth parallax effects
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
@@ -26,7 +25,6 @@ export function Hero() {
       ref={ref}
       className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-background"
     >
-      {/* Main Content */}
       <motion.div
         style={{ y, opacity }}
         className="z-10 text-center px-4 space-y-8 relative"
@@ -37,11 +35,14 @@ export function Hero() {
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="perspective-text"
         >
-          <h1 className="text-6xl md:text-9xl font-bold text-foreground drop-shadow-[0_0_25px_rgba(255,255,255,0.3)] tracking-tighter">
-            2026
+          <h1 className="text-5xl md:text-8xl font-bold text-foreground drop-shadow-[0_0_25px_rgba(255,255,255,0.3)] tracking-tighter">
+            I Love Ademi
           </h1>
-          <p className="text-2xl md:text-4xl text-muted-foreground font-light mt-6 tracking-[0.2em] uppercase">
-            A Year With You
+          <p className="text-xl md:text-3xl text-muted-foreground font-light mt-6 tracking-[0.15em] uppercase">
+            Today is 365 Days Since We Met
+          </p>
+          <p className="text-base md:text-xl text-pink-400 font-light mt-4 tracking-widest">
+            15.04.2025 → 15.04.2026 ❤️
           </p>
         </motion.div>
 
@@ -53,7 +54,7 @@ export function Hero() {
           whileHover={{ scale: 1.05, letterSpacing: "0.1em" }}
           className="group relative px-10 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full text-foreground/80 text-sm md:text-base font-medium uppercase tracking-widest transition-all duration-300 hover:bg-white/10 hover:border-primary/50 hover:text-primary hover:shadow-[0_0_30px_rgba(255,105,180,0.3)]"
         >
-          Begin Our Journey
+          Begin Our Journey ✨
         </motion.button>
       </motion.div>
     </section>
