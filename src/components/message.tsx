@@ -38,28 +38,38 @@ function TheaterTickets() {
             <div className="absolute left-0 right-0 top-1/2 border-t border-dashed border-white/15" />
 
             <div className="p-6 pb-3">
-              <div className="flex items-center gap-2 mb-3">
+              <div className="flex items-center gap-2 mb-1">
                 <span className="text-2xl">🎭</span>
-                <span className="text-xs tracking-[0.25em] text-zinc-400 uppercase">Theatre</span>
+                <span className="text-xs tracking-[0.25em] text-zinc-400 uppercase">Theatre · Ticket</span>
               </div>
-              <p className="text-xl font-bold text-white tracking-wider">ТЕАТР</p>
-              <p className="text-sm text-zinc-400 mt-1">For Two ❤️</p>
+              <p className="text-base font-bold text-white leading-tight mt-2">
+                Қозыкөрпеш — Баян Сұлу
+              </p>
+              <p className="text-xs text-zinc-500 mt-1 italic">Kozıkorpeş — Bayan Sulu</p>
             </div>
 
             <div className="px-6 pt-3 pb-6">
-              <div className="flex justify-between items-end">
+              <div className="grid grid-cols-3 gap-2 mb-3">
                 <div>
-                  <p className="text-xs text-zinc-500 uppercase tracking-widest">Guest</p>
-                  <p className="text-sm font-semibold text-white mt-1">
-                    {n === 1 ? "Ademi 💛" : "Ospan ❤️"}
-                  </p>
+                  <p className="text-[10px] text-zinc-500 uppercase tracking-widest">Date</p>
+                  <p className="text-sm font-bold text-white mt-0.5">15.04.2026</p>
                 </div>
-                <div className="text-right">
-                  <p className="text-xs text-zinc-500 uppercase tracking-widest">Seat</p>
-                  <p className="text-lg font-bold text-primary mt-1">
+                <div>
+                  <p className="text-[10px] text-zinc-500 uppercase tracking-widest">Time</p>
+                  <p className="text-sm font-bold text-white mt-0.5">19:00</p>
+                </div>
+                <div>
+                  <p className="text-[10px] text-zinc-500 uppercase tracking-widest">Seat</p>
+                  <p className="text-sm font-bold text-primary mt-0.5">
                     {n === 1 ? "A1" : "A2"}
                   </p>
                 </div>
+              </div>
+              <div>
+                <p className="text-[10px] text-zinc-500 uppercase tracking-widest">Guest</p>
+                <p className="text-sm font-semibold text-white mt-0.5">
+                  {n === 1 ? "Ademi 💛" : "Ospan ❤️"}
+                </p>
               </div>
             </div>
 
